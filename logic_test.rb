@@ -5,7 +5,11 @@ number_of_questions = 4
 
 avogadro_constant = 6.0 * 10 **23
 
-mass_to_mol_sentence = "#{material_array[rand(0..material_hash.length - 1)]}が#{material_hash[:硫酸].to_f / rand(10..100)}gあります。何molですか?"
+# 質量からmolを求める問題
+rand_material_array = rand(0..material_hash.length - 1)
+rand_mol = rand(10..100)
+material = material_array[rand_material_array]
+mass_to_mol_sentence = "#{material}が#{material_hash[material]}gあります。何molですか?"  # hashが使えていない
 
 def mass_to_mol(material_array, material_hash, mass_to_mol_sentence)
     return mass_to_mol_sentence
