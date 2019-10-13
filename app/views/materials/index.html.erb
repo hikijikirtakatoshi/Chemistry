@@ -4,21 +4,14 @@
 
 </head>
 
-<body>
-    <header style="text-align:center">
-        <h1>いい感じに化学の問題を作ってくれるやつ</h1>
-    </header>
-
-    <body style="text-align: center">
-        <div style="font-size:30px">登録した物質一覧</div>
-        <div>
-            <ul>
-                <% @materials.each do |material| %>
-                <li style="font-weight: bold"><%= material.name %>:<%= material.amount_of_substance %></li>
-                <% end %>
-                <li></li>
-            </ul>
-        </div>
-    </body>
-
+<body style="text-align: center">
+    <div style="font-size:30px">登録した物質一覧</div>
+    <div>
+        <ul>
+            <% @materials.each do |material| %>
+            <li style="font-weight: bold"><%= material.name %>:<%= material.amount_of_substance %></li>
+            <% end %>
+            <li></li>
+        </ul>
+    </div>
 </body>
