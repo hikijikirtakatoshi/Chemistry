@@ -15,9 +15,9 @@
     <div class="title">
       もるぱらだいす</div>
     <div class="header_contents">
-      <div class="header_content">ホーム</div>
-      <div class="header_content">ストック一覧</div>
-      <div class="header_content">問題を作る</div>
+      <%= link_to "ホーム", root_path,class: "header_content" %>
+      <%= link_to "ストック一覧", questions_path,class: "header_content" %>
+      <%= link_to "問題を作る", questions_path,class: "header_content" %>
     </div>
   </header>
   <%= yield %>

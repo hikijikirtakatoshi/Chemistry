@@ -28,6 +28,8 @@ header {
     margin-left:20px;
     font-size: 15px;
     font-family: arial unicode ms;
+    text-decoration: none;
+    color: white;
 }
 
 .header_content:hover {
