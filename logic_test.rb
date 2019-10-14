@@ -31,7 +31,6 @@ def mol_to_number
 
 end
 
-(1..number_of_questions).each do |number|
-    # p mass_to_mol(material_array, material_hash)
-    p mol_to_mass(material_array, material_hash)
-end
+function_array = [mass_to_mol(material_array, material_hash), mol_to_mass(material_array, material_hash)]
+
+p function_array
