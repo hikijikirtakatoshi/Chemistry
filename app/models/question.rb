@@ -1,3 +1,3 @@
 class Question < ApplicationRecord
-    belogs_to :question
+    belongs_to :question
 end

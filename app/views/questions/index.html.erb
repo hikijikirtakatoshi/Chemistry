@@ -9,13 +9,16 @@
         <div style="font-size: 30px;">問題作成</div>
         <div
             style="text-align: center; height: 200px; background: #999;border-radius:10px; margin: auto; padding: 15px">
-            <div style="width: 90%; margin: 5px auto; background: white; height: 100px;">
-                問題文の設定
-                <%= form_for(@fields) do |f| %>
-                <%= f.select :text [["20代", "20代"], ["30代", "30代"],  ["40代", "40代"], ["50代以上", "50代"],["60代以上", "60代以上"] ],  :prompt => "選択してください" %>
-                <% end %>
+            <div style="width: 90%; margin: 5px auto; background: white; height: 100px; padding-top: 10px">
+                <select>
+                    <option>物質量</option>
+                    <option>酸塩基</option>
+                    <option>酸化還元</option>
+                </select>
+                <div style="font-size:25px; margin-top:30px;">作成</div>
             </div>
-            <div style="width: 90%; margin: 10px auto; background: white; height: 80px;">
+            <div style="width: 90%; margin: 10px auto; background: white; height: 80px; vertical-align: middle">
+                塩酸が2.8molあります。何グラムですか?
             </div>
         </div>
     </section>
