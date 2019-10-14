@@ -5,9 +5,20 @@
 </head>
 
 <body style="background-color: #f6f6f6;">
-    <div style="width:80%; margin:30px auto; text-align: center; height: 100px; background: red;border-radius:10px;">
-        問題を作る部分
-    </div>
+    <section style="width:80%; margin: 30px auto; text-align: center">
+        <div style="font-size: 30px;">問題作成</div>
+        <div
+            style="text-align: center; height: 200px; background: #999;border-radius:10px; margin: auto; padding: 15px">
+            <div style="width: 90%; margin: 5px auto; background: white; height: 100px;">
+                問題文の設定
+                <%= form_for(@fields) do |f| %>
+                <%= f.select :text [["20代", "20代"], ["30代", "30代"],  ["40代", "40代"], ["50代以上", "50代"],["60代以上", "60代以上"] ],  :prompt => "選択してください" %>
+                <% end %>
+            </div>
+            <div style="width: 90%; margin: 10px auto; background: white; height: 80px;">
+            </div>
+        </div>
+    </section>
     <div
         style="width:80%; margin: 30px auto; text-align: center;height: 600px; padding-top: 20px;font-size: 30px; background:#999;border-radius: 10px">
         最近作った問題

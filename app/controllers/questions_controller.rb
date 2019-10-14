@@ -9,6 +9,7 @@ class QuestionsController < ApplicationController
 
     def index
         @questions = Question.all
+        @fields = Field.all
     end
 
     def show
