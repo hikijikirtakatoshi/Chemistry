@@ -10,3 +10,9 @@ sentences = ['#{material}が#{amount}molあります。何グラムですか', '
 sentences.each do |sentence|
     Exercise.create(sentence: sentence) if Exercise.find_by(sentence: sentence) == nil
 end
+
+fields = ["物質量", " 酸化還元", "酸塩基"]
+
+fields.each do |field|
+    Field.create(text: field) if Field.find_by(text: field) == nil
+end
