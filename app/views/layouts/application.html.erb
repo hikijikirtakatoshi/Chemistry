@@ -12,8 +12,9 @@
 
 <body>
   <header>
-    <div class="title">
-      もるぱらだいす</div>
+    <!-- <div class="title">
+      もるぱらだいす</div> -->
+    <%= link_to "もるぱらだいす", root_path,class: "title" %>
     <div class="header_contents">
       <%= link_to "ホーム", root_path,class: "header_content" %>
       <%= link_to "ストック一覧", questions_path,class: "header_content" %>
