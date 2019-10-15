@@ -9,15 +9,16 @@
         <div style="font-size: 30px;">問題作成</div>
         <div
             style="text-align: center; height: 200px; background: #999;border-radius:10px; margin: auto; padding: 15px">
-            <div style="width: 90%; margin: 5px auto; background: white; height: 100px; padding-top: 10px">
-                <select>
+            <div style="width: 90%; margin: 5px auto; background: white; height: 120px; padding-top: 10px">
+                <select style="cursor: pointer;">
                     <option>物質量</option>
                     <option>酸塩基</option>
                     <option>酸化還元</option>
                 </select>
                 <div style="font-size:25px; margin-top:30px;">作成</div>
+                <%= link_to "作成", new_question_path %>
             </div>
-            <div style="width: 90%; margin: 10px auto; background: white; height: 80px; vertical-align: middle">
+            <div style="width: 90%; margin: 10px auto; background: white; height: 60px;font-size: 20px;">
                 塩酸が2.8molあります。何グラムですか?
             </div>
         </div>
