@@ -36,4 +36,24 @@ header {
     color: black;
 }
 
+.fields {
+    height:50px;
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 40px;
+}
 
+.fields:hover {
+    color: #55c500;
+}
+
+.timeline {
+    height:50px;
+    text-align: center;
+    margin:10px auto;
+    margin-top:20px;
+}
+
+.timeline:hover {
+    color: #55c500;
+}

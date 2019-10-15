@@ -20,5 +20,5 @@ end
 questions = ["いい感じの問題","素晴らしい問題","頑張ればできる問題"]
 
 questions.each do |question|
-    Question.create(contents: question)
+    Question.create!(contents: question)
 end
