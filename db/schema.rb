@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_14_071502) do
+ActiveRecord::Schema.define(version: 2019_10_16_092026) do
 
   create_table "exercises", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_10_14_071502) do
     t.datetime "updated_at", null: false
     t.text "contents"
     t.integer "field_id"
+    t.string "answer"
   end
 
 end

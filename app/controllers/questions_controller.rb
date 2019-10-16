@@ -27,9 +27,6 @@ class QuestionsController < ApplicationController
     end
 
     helper_method :new_question
-    
-    material_hash = {硫酸: 98, 二酸化炭素: 44, 酸素: 32}
-    material_array = ['硫酸', '二酸化炭素', '酸素']
 
     private
     def mass_to_mol(material, amount_of_substance)
