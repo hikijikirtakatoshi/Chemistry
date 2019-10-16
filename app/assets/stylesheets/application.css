@@ -47,6 +47,7 @@ header {
 
 .fields:hover {
     color:rgba(3, 138, 26, 0.884);
+    font-weight: bold;
 }
 
 .timeline {
@@ -58,6 +59,7 @@ header {
 
 .timeline:hover {
     color: rgba(3, 138, 26, 0.884);
+    font-weight: bold;
 }
 
 .materials {
@@ -67,5 +69,6 @@ header {
 
 .materials:hover {
     color: rgba(3, 138, 26, 0.884);
+    font-weight: bold;
 }
 
