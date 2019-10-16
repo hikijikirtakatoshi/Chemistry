@@ -46,7 +46,7 @@ header {
 }
 
 .fields:hover {
-    color: #55c500;
+    color:rgba(3, 138, 26, 0.884);
 }
 
 .timeline {
@@ -57,5 +57,15 @@ header {
 }
 
 .timeline:hover {
-    color: #55c500;
+    color: rgba(3, 138, 26, 0.884);
 }
+
+.materials {
+    text-decoration: none;
+    color: #3F3A3A;
+}
+
+.materials:hover {
+    color: rgba(3, 138, 26, 0.884);
+}
+
