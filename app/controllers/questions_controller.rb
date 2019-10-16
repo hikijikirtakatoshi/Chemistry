@@ -31,8 +31,7 @@ class QuestionsController < ApplicationController
     private
     def mass_to_mol(material, amount_of_substance)
         rand_mol = rand(1..100) / 10.00
-        p rand_mol
         mass_to_mol_sentence = "#{material}が#{amount_of_substance.to_f * rand_mol}gあります。何molですか?"
-        return mass_to_mol_sentence
+        return mass_to_mol_sentence, rand_mol.to_s + "mol"
     end
 end
