@@ -17,8 +17,8 @@ fields.each do |field|
     Field.create(text: field) if Field.find_by(text: field) == nil
 end
 
-questions = ["いい感じの問題","素晴らしい問題","頑張ればできる問題"]
+questions = ["いい感じの問題","素晴らしい問題","頑張ればできる問題","問題の中の問題","世界的な問題","やばい問題"]
 
 questions.each do |question|
-    Question.create!(contents: question)
+    Question.create!(contents: question) if Question.find_by(contents: question) == nil
 end
